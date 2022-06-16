@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+.container {
+  min-width: 375px;
+  background-image: url(./images/bg-intro-mobile.png);
+  background-color: hsl(0, 100%, 74%);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.top_text h3 {
+  margin: auto;
+  font-weight: 700;
+  margin-top: 80px;
+  margin-bottom: 18px;
+  font-size: 40px;
+  text-align: center;
+  width: 400px;
+  word-wrap: break-word;
+  color: white;
+}
+
+.top_text p {
+  margin: auto;
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 400;
+  width: 400px;
+  word-wrap: break-word;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.price_banner {
+  background-color: hsl(248, 32%, 49%);
+  width: 90%;
+  margin: auto;
+  padding: 10px 20px 10px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 2px rgba(71, 71, 71, 0.473);
+}
+
+.price_banner p {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  width: 205px;
+  margin: auto;
+  line-height: 20px;
+  word-wrap: break-word;
+}
+
+.reg_form {
+  background-color: white;
+  border-radius: 5px;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 40px;
+  padding-left: 25px;
+  box-shadow: 0px 7px 2px rgba(71, 71, 71, 0.473);
+}
+
+.reg_form input {
+  width: 90%;
+  margin-top: 15px;
+  height: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 20px;
+  border: 1px solid rgb(231, 231, 231);
+  border-radius: 5px;
+}
+
+.reg_form input:active {
+  background: url(./images/icon-error.svg);
+  background-size: 20px;
+}
+
+.reg_form button {
+  width: 90%;
+  margin: auto;
+  margin-top: 15px;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  background-color: hsl(154, 66%, 39%);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 4px 2px rgba(1, 124, 42, 0.473);
+}
+
+.reg_form button:hover {
+  background-color: hsl(154, 59%, 65%);
+}
+
+footer h5 {
+  width: 90%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: normal;
+  line-height: 20px;
+}
+
+footer a {
+  color: hsl(0, 100%, 74%);
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 50px;
+  }
+
+  main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .top_text {
+    width: 35vw;
+    height: 50%;
+    margin-left: 60px;
+  }
+
+  .top_text h3 {
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+    font-size: 6vh;
+    width: 35vw;
+    margin-bottom: 30px;
+    line-height: 55px;
+  }
+
+  .top_text p {
+    text-align: left;
+    font-size: 2.5vh;
+    width: 40vw;
+    line-height: 30px;
+    margin: 0;
+  }
+
+  .main_banner {
+    width: 50vw;
+    height: 50%;
+    margin-right: 60px;
+  }
+  .price_banner {
+    border-radius: 9px;
+  }
+  .price_banner p {
+    text-align: center;
+    font-size: 25px;
+    width: 40vw;
+    padding: 10px 0;
+  }
+  .reg_form {
+    padding: 40px 40px;
+    border-radius: 9px;
+  }
+  .reg_form input {
+    margin: auto;
+    width: 100%;
+    margin-bottom: 25px;
+    height: 8vh;
+    font-size: 20px;
+  }
+
+  .reg_form button {
+    margin: auto;
+    width: 100%;
+    margin-bottom: 25px;
+    height: 8vh;
+  }
+  footer h5 {
+    font-size: 15px;
+    margin: auto;
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .top_text p {
+    font-size: 15px;
+  }
+}
